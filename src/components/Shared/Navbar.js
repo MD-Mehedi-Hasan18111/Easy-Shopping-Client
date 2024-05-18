@@ -6,6 +6,8 @@ import Office from "@/global/assets/images/icons/office.svg";
 import Outdoor from "@/global/assets/images/icons/outdoor-cafe.svg";
 import Mattress from "@/global/assets/images/icons/bed-2.svg";
 import Image from "next/image";
+import { IoIosMenu  } from "react-icons/io";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -13,7 +15,7 @@ const Navbar = () => {
       <div className="container flex">
         <div className="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
           <span className="text-white">
-            <i className="fa-solid fa-bars"></i>
+            <IoIosMenu className="text-[24px]" />
           </span>
           <span className="capitalize ml-2 text-white">All Categories</span>
 
@@ -102,18 +104,18 @@ const Navbar = () => {
 
         <div className="flex items-center justify-between flex-grow pl-12">
           <div className="flex items-center space-x-6 capitalize">
-            <a
-              href="../index.html"
+            <Link
+              href="/"
               className="text-gray-200 hover:text-white transition"
             >
               Home
-            </a>
-            <a
-              href="pages/shop.html"
+            </Link>
+            <Link
+              href="/shop"
               className="text-gray-200 hover:text-white transition"
             >
               Shop
-            </a>
+            </Link>
             <a href="#" className="text-gray-200 hover:text-white transition">
               About us
             </a>

@@ -17,7 +17,7 @@ const FeatureServices = () => {
             className="w-12 h-12 object-contain"
           />
           <div>
-            <h4 className="font-medium capitalize text-lg">Free Shipping</h4>
+            <h4 className="font-[600] capitalize text-lg">Free Shipping</h4>
             <p className="text-gray-500 text-sm">Order over $200</p>
           </div>
         </div>
@@ -30,7 +30,7 @@ const FeatureServices = () => {
             className="w-12 h-12 object-contain"
           />
           <div>
-            <h4 className="font-medium capitalize text-lg">Money Rturns</h4>
+            <h4 className="font-[600] capitalize text-lg">Money Rturns</h4>
             <p className="text-gray-500 text-sm">30 days money returs</p>
           </div>
         </div>
@@ -43,7 +43,7 @@ const FeatureServices = () => {
             className="w-12 h-12 object-contain"
           />
           <div>
-            <h4 className="font-medium capitalize text-lg">24/7 Support</h4>
+            <h4 className="font-[600] capitalize text-lg">24/7 Support</h4>
             <p className="text-gray-500 text-sm">Customer support</p>
           </div>
         </div>

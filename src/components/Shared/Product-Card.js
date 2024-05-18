@@ -4,23 +4,21 @@ import { FaStar } from "react-icons/fa";
 import React from "react";
 import { CiHeart } from "react-icons/ci";
 import { RxMagnifyingGlass } from "react-icons/rx";
+import Link from "next/link";
 
 const ProductCard = () => {
   return (
     <div className="bg-white shadow rounded overflow-hidden group">
       <div className="relative">
         <Image src={ProductImg} alt="product image" className="w-full" />
-        <div
-          className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
-                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition"
-        >
-          <a
-            href="#"
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <Link
+            href={`/shop/123`}
             className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
             title="view product"
           >
             <RxMagnifyingGlass />
-          </a>
+          </Link>
           <a
             href="#"
             className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
@@ -32,7 +30,7 @@ const ProductCard = () => {
       </div>
       <div className="pt-4 pb-3 px-4">
         <a href="#">
-          <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+          <h4 className="uppercase font-[600] text-xl mb-2 text-gray-800 hover:text-primary transition">
             Couple Sofa
           </h4>
         </a>

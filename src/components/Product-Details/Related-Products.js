@@ -1,13 +1,13 @@
 import React from "react";
 import ProductCard from "../Shared/Product-Card";
 
-const TrendingProducts = () => {
+const RelatedProducts = () => {
   return (
     <div class="container pb-16">
       <h2 class="text-2xl font-[600] text-gray-800 uppercase mb-6">
-        TRENDING PRODUCTS
+        Related products
       </h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-4 gap-6">
         <ProductCard />
         <ProductCard />
         <ProductCard />
@@ -17,4 +17,4 @@ const TrendingProducts = () => {
   );
 };
 
-export default TrendingProducts;
+export default RelatedProducts;
