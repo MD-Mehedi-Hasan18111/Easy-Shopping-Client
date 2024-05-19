@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Sofa from "@/global/assets/images/icons/sofa.svg";
 import Terarce from "@/global/assets/images/icons/terrace.svg";
@@ -6,10 +8,26 @@ import Office from "@/global/assets/images/icons/office.svg";
 import Outdoor from "@/global/assets/images/icons/outdoor-cafe.svg";
 import Mattress from "@/global/assets/images/icons/bed-2.svg";
 import Image from "next/image";
-import { IoIosMenu  } from "react-icons/io";
+import { IoIosMenu } from "react-icons/io";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
+  let btnLabel;
+  let url;
+  if (pathname === "/register") {
+    btnLabel = "Login";
+    url = "/login";
+  } else if (pathname === "/login") {
+    btnLabel = "Register";
+    url = "/register";
+  } else {
+    btnLabel = "Login/Register";
+    url = "/login";
+  }
+
   return (
     <nav className="bg-gray-800">
       <div className="container flex">
@@ -123,9 +141,12 @@ const Navbar = () => {
               Contact us
             </a>
           </div>
-          <a href="#" className="text-gray-200 hover:text-white transition">
-            Login/Register
-          </a>
+          <Link
+            href={url}
+            className="text-gray-200 hover:text-white transition"
+          >
+            {btnLabel}
+          </Link>
         </div>
       </div>
     </nav>
