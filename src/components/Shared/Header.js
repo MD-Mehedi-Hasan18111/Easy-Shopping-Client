@@ -3,7 +3,7 @@ import React from "react";
 import Logo from "@/global/assets/images/logo.svg";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 
-const Header = () => {
+const Header = async () => {
   return (
     <header className="py-4 shadow-sm bg-white">
       <div className="container flex items-center justify-between">
